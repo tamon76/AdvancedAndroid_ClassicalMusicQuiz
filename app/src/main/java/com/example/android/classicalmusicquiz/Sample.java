@@ -207,7 +207,11 @@ class Sample {
     }
 
     String getUri() {
-        return mUri;
+        if (mUri == null) {
+            return "";
+        } else {
+            return mUri;
+        }
     }
 
     void setUri(String uri) {
